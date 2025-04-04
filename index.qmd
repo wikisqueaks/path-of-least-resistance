@@ -1,0 +1,41 @@
+---
+title: "Path of Least Resistance"
+subtitle: "Additional Project Information"
+author: Group 2
+date: today
+format:
+  html:
+    theme: solar
+    toc: true
+    toc-depth: 2
+    number-sections: true
+---
+
+# Project Overview
+**Project Title:** *Path of Least Resistance: Prioritizing Avian Biodiversity Areas in a Highly Fragmeneted Boreal Ecosystem.*  
+**Authors**: *Parker Cooke, Adam Kleparchuk, Nolan Merryweather, Kyle Taylor*  
+**Start Date:** *2025-01-07*  
+**End Date** *2025-04-17*  
+
+# Objectives
+Describe the main goals of the project, including research questions, conservation priorities, or hypotheses.
+
+# Methods
+Outline the methodologies, including:
+- Data collection protocols  
+- Remote sensing/GIS methods  
+- Statistical models used  
+
+# Data Sources
+| Dataset | Source | Description | Access |
+|---------|--------|-------------|--------|
+| Example Dataset 1 | NASA | Satellite-derived vegetation indices | Public |
+| Example Dataset 2 | Field Surveys | Ground-truth species abundance | Restricted |
+
+# Deliverables
+List expected or published papers.  
+- **Reports:** Link to technical reports or progress updates.  
+- **Datasets:** Repository links (e.g., Zenodo, Dryad, private server).  
+
+
+---
