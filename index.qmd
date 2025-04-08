@@ -27,7 +27,7 @@ This project was completed as partial fulfillment of the University of Alberta's
 
 # Public Resources
 
-[Poster Presentation at the University of Alberta](assets/RENR496_Group2_poster.pdf)
+[Poster Presentation at the University of Alberta](https://wikisqueaks.github.io/path-of-least-resistance/RENR496_Group2_Poster.pdf)
 
 [ArcGIS Storymap Presentation (*In Development*)](https://storymaps.arcgis.com/stories/72fcd3e55d7c4b09980180860057019b)
 
