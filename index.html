@@ -58,6 +58,35 @@ div.csl-indent {
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -133,26 +162,67 @@ div.csl-indent {
 <h1 data-number="3"><span class="header-section-number">3</span> Project Overview</h1>
 <section id="objectives" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="objectives"><span class="header-section-number">3.1</span> Objectives</h2>
-<p>Seismic lines represent a major source of habitat fragmentation in Alberta’s Upper Athabasca Region, disrupting ecosystem structure and function by reducing connectivity, increasing edge effects, and altering bird behaviour <span class="citation" data-cites="dabros2018 lee2006 bayne2005">(<a href="#ref-dabros2018" role="doc-biblioref">Dabros, Pyper, and Castilla 2018</a>; <a href="#ref-lee2006" role="doc-biblioref">Lee and Boutin 2006</a>; <a href="#ref-bayne2005" role="doc-biblioref">Bayne et al. 2005</a>)</span>.</p>
+<p>Seismic lines represent a major source of habitat fragmentation in Alberta’s Upper Athabasca Region (<a href="#fig-fig1" class="quarto-xref">Figure&nbsp;1</a>), disrupting ecosystem structure and function by reducing connectivity, increasing edge effects, and altering bird behaviour <span class="citation" data-cites="dabros2018 lee2006 bayne2005">(<a href="#ref-dabros2018" role="doc-biblioref">Dabros, Pyper, and Castilla 2018</a>; <a href="#ref-lee2006" role="doc-biblioref">Lee and Boutin 2006</a>; <a href="#ref-bayne2005" role="doc-biblioref">Bayne et al. 2005</a>)</span>.</p>
 <div id="fig-fig1" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="assets/Fig1.jpg" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Figure 1. Map of the study area in Alberta’s Upper Athabasca Region.
+Figure&nbsp;1: Map of the study area in Alberta’s Upper Athabasca Region.
 </figcaption>
 </figure>
 </div>
-<p>With nearly 168,000 km of linear features within the study area, representing $1.7B in reclamation deficit, prioritizing restoration efforts is essential to maximize conservation impact within ﬁnancial constraints. Our objective is to identify areas of high conservation value with and without seismic cost considerations and to develop a simple strategic classification of <strong>Protect</strong>, <strong>Restore</strong>, and <strong>Manage</strong> to inform conservation planning and land use management.</p>
+<p>With nearly 168,000 km of linear features within the study area (<a href="#fig-fig2" class="quarto-xref">Figure&nbsp;2</a>), representing $1.7B in reclamation deficit, prioritizing restoration efforts is essential to maximize conservation impact within ﬁnancial constraints. Our objective is to identify areas of high conservation value with and without seismic cost considerations and to develop a simple strategic classification of <strong>Protect</strong>, <strong>Restore</strong>, and <strong>Manage</strong> to inform conservation planning and land use management.</p>
+<div id="fig-fig2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fig2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="assets/Fig2.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Map of seismic line density in Alberta’s Upper Athabasca Region. Units are linear <span class="math inline">\(km/km^2\)</span>.
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="methods" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="methods"><span class="header-section-number">3.2</span> Methods</h2>
-<p>Over 1 million Alberta bird occurrence records from eBird were used to build 46 Maxent species distribution models (SDMs) for Alberta. These complemented 87 songbird models from ABMI, totalling 133 species out of the 304 native breeding birds, including 13 species of concern. These SDMs were used as conservation features in Zonation, using a hierarchical mask for existing protected areas, and excluding aquatic, developed &amp; agricultural land cover. The prioritization model was run once with seismic line density as a cost function and once without (Fig. 4).</p>
+<p>Over 1 million Alberta bird occurrence records from eBird were used to build 46 Maxent species distribution models (SDMs) for Alberta. These complemented 87 songbird models from ABMI, totalling 133 species out of the 304 native breeding birds, including 13 species of concern (<a href="#fig-fig3" class="quarto-xref">Figure&nbsp;3</a>).</p>
+<div id="fig-fig3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fig3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="assets/Fig3.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Examples of the SDMs created as inputs into the prioritization analysis.
+</figcaption>
+</figure>
+</div>
+<p>These SDMs were used as conservation features in Zonation, using a hierarchical mask for existing protected areas, and excluding aquatic, developed &amp; agricultural land cover. The prioritization model was run once with seismic line density as a cost function and once without (<a href="#fig-fig4" class="quarto-xref">Figure&nbsp;4</a>).</p>
+<div id="fig-fig4" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fig4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="assets/Fig4.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Zonation analysis is shown with no cost prioritization (left) and with seismic line cost prioritization (right). Each zonation model ranks each 1 square km cell sequentially from highest conservation value to lowest, considering complementarity. With cost prioritization, the algorithm selects lower cost cells of equal value over those with higher costs.
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="results" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="results"><span class="header-section-number">3.3</span> Results</h2>
 <p>The resulting prioritization models (maps) showed the distribution of the diversity value within the study region, with the seismic line density being used to show how priority is effected when considering their reclamation cost.We then a created bivariate map to analyze the overlap between cost and no cost conservation strategies (Fig. 5).</p>
+<div id="fig-fig5" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fig5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="assets/Fig5.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: A contingency matrix utilizing bivariate colour symbology to demonstrate the overlap and divergence between our two Zonation outputs. The chart (top left) indicates the overall cost of restoration within each of the ﬁve categories based on $12.5k per linear km of seismic line <span class="citation" data-cites="filicetti2019">(<a href="#ref-filicetti2019" role="doc-biblioref">Filicetti, Cody, and Nielsen 2019</a>)</span>.
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="discussion" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="discussion"><span class="header-section-number">3.4</span> Discussion</h2>
@@ -175,6 +245,9 @@ Bayne, Erin M., Steve L. Van Wilgenburg, Stan Boutin, and Keith A. Hobson. 2005.
 </div>
 <div id="ref-dabros2018" class="csl-entry" role="listitem">
 Dabros, Anna, Matthew Pyper, and Guillermo Castilla. 2018. <span>“Seismic Lines in the Boreal and Arctic Ecosystems of North America: Environmental Impacts, Challenges, and Opportunities.”</span> <em>Environmental Reviews</em> 26 (2): 214–29. <a href="https://doi.org/10.1139/er-2017-0080">https://doi.org/10.1139/er-2017-0080</a>.
+</div>
+<div id="ref-filicetti2019" class="csl-entry" role="listitem">
+Filicetti, Angelo T., Michael Cody, and Scott E. Nielsen. 2019. <span>“Caribou Conservation: Restoring Trees on Seismic Lines in Alberta, Canada.”</span> <em>Forests</em> 10 (2): 185. <a href="https://doi.org/10.3390/f10020185">https://doi.org/10.3390/f10020185</a>.
 </div>
 <div id="ref-lee2006" class="csl-entry" role="listitem">
 Lee, Philip, and Stan Boutin. 2006. <span>“Persistence and Developmental Transition of Wide Seismic Lines in the Western Boreal Plains of Canada.”</span> <em>Journal of Environmental Management</em> 78 (3): 240–50. <a href="https://doi.org/10.1016/j.jenvman.2005.03.016">https://doi.org/10.1016/j.jenvman.2005.03.016</a>.
