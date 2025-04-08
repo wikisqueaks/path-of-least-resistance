@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Group 2">
-<meta name="dcterms.date" content="2025-04-03">
+<meta name="dcterms.date" content="2025-04-08">
 
 <title>Path of Least Resistance</title>
 <style>
@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="index_files/libs/clipboard/clipboard.min.js"></script>
@@ -35,6 +55,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
 
 
 </head>
@@ -47,11 +69,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul class="collapse">
-  <li><a href="#project-overview" id="toc-project-overview" class="nav-link active" data-scroll-target="#project-overview"><span class="header-section-number">1</span> Project Overview</a></li>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives"><span class="header-section-number">2</span> Objectives</a></li>
-  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods"><span class="header-section-number">3</span> Methods</a></li>
-  <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources"><span class="header-section-number">4</span> Data Sources</a></li>
-  <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables"><span class="header-section-number">5</span> Deliverables</a></li>
+  <li><a href="#project-information" id="toc-project-information" class="nav-link active" data-scroll-target="#project-information"><span class="header-section-number">1</span> Project Information</a></li>
+  <li><a href="#public-resources" id="toc-public-resources" class="nav-link" data-scroll-target="#public-resources"><span class="header-section-number">2</span> Public Resources</a></li>
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link" data-scroll-target="#project-overview"><span class="header-section-number">3</span> Project Overview</a>
+  <ul class="collapse">
+  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives"><span class="header-section-number">3.1</span> Objectives</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods"><span class="header-section-number">3.2</span> Methods</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><span class="header-section-number">3.3</span> Results</a></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">3.4</span> Discussion</a></li>
+  <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources"><span class="header-section-number">3.5</span> Data Sources</a></li>
+  <li><a href="#literature-cited" id="toc-literature-cited" class="nav-link" data-scroll-target="#literature-cited"><span class="header-section-number">3.6</span> Literature Cited</a></li>
+  </ul></li>
   </ul>
 </nav>
 </div>
@@ -77,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 3, 2025</p>
+      <p class="date">April 8, 2025</p>
     </div>
   </div>
   
@@ -89,62 +117,70 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="project-overview" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Project Overview</h1>
-<p><strong>Project Title:</strong> <em>Path of Least Resistance: Prioritizing Avian Biodiversity Areas in a Highly Fragmeneted Boreal Ecosystem.</em><br>
-<strong>Authors</strong>: <em>Parker Cooke, Adam Kleparchuk, Nolan Merryweather, Kyle Taylor</em><br>
-<strong>Start Date:</strong> <em>2025-01-07</em><br>
-<strong>End Date</strong> <em>2025-04-17</em></p>
+<section id="project-information" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Project Information</h1>
+<p>This project was completed as partial fulfillment of the University of Alberta’s <strong><em>Environmental &amp; Conservation Sciences - Conservation Biology</em></strong> degree program during the course of RENR 496 <em>Conservation Planning</em> with Dr.&nbsp;Scott Nielsen.</p>
+<p><strong>Project Title:</strong> <em>Path of Least Resistance: Prioritizing Avian Biodiversity Areas in a Highly Fragmented Boreal Ecosystem.</em></p>
+<p><strong>Authors</strong>: <em>Parker Cooke, Adam Kleparchuk, Nolan Merryweather, Kyle Taylor</em></p>
+<p><strong>Date Completed:</strong> April 8th, 2025.</p>
 </section>
-<section id="objectives" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Objectives</h1>
-<p>Describe the main goals of the project, including research questions, conservation priorities, or hypotheses.</p>
+<section id="public-resources" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Public Resources</h1>
+<p><a href="assets/RENR496_Group2_poster.pdf">Poster Presentation at the University of Alberta</a></p>
+<p><a href="https://storymaps.arcgis.com/stories/72fcd3e55d7c4b09980180860057019b">ArcGIS Storymap Presentation (<em>In Development</em>)</a></p>
 </section>
-<section id="methods" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Methods</h1>
-<p>Outline the methodologies, including: - Data collection protocols<br>
-- Remote sensing/GIS methods<br>
-- Statistical models used</p>
+<section id="project-overview" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Project Overview</h1>
+<section id="objectives" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="objectives"><span class="header-section-number">3.1</span> Objectives</h2>
+<p>Seismic lines represent a major source of habitat fragmentation in Alberta’s Upper Athabasca Region, disrupting ecosystem structure and function by reducing connectivity, increasing edge effects, and altering bird behaviour <span class="citation" data-cites="dabros2018 lee2006 bayne2005">(<a href="#ref-dabros2018" role="doc-biblioref">Dabros, Pyper, and Castilla 2018</a>; <a href="#ref-lee2006" role="doc-biblioref">Lee and Boutin 2006</a>; <a href="#ref-bayne2005" role="doc-biblioref">Bayne et al. 2005</a>)</span>.</p>
+<div id="fig-fig1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fig1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="assets/Fig1.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Figure 1. Map of the study area in Alberta’s Upper Athabasca Region.
+</figcaption>
+</figure>
+</div>
+<p>With nearly 168,000 km of linear features within the study area, representing $1.7B in reclamation deficit, prioritizing restoration efforts is essential to maximize conservation impact within ﬁnancial constraints. Our objective is to identify areas of high conservation value with and without seismic cost considerations and to develop a simple strategic classification of <strong>Protect</strong>, <strong>Restore</strong>, and <strong>Manage</strong> to inform conservation planning and land use management.</p>
 </section>
-<section id="data-sources" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Data Sources</h1>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 23%">
-<col style="width: 21%">
-<col style="width: 34%">
-<col style="width: 21%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Dataset</th>
-<th>Source</th>
-<th>Description</th>
-<th>Access</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Example Dataset 1</td>
-<td>NASA</td>
-<td>Satellite-derived vegetation indices</td>
-<td>Public</td>
-</tr>
-<tr class="even">
-<td>Example Dataset 2</td>
-<td>Field Surveys</td>
-<td>Ground-truth species abundance</td>
-<td>Restricted</td>
-</tr>
-</tbody>
-</table>
+<section id="methods" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="methods"><span class="header-section-number">3.2</span> Methods</h2>
+<p>Over 1 million Alberta bird occurrence records from eBird were used to build 46 Maxent species distribution models (SDMs) for Alberta. These complemented 87 songbird models from ABMI, totalling 133 species out of the 304 native breeding birds, including 13 species of concern. These SDMs were used as conservation features in Zonation, using a hierarchical mask for existing protected areas, and excluding aquatic, developed &amp; agricultural land cover. The prioritization model was run once with seismic line density as a cost function and once without (Fig. 4).</p>
 </section>
-<section id="deliverables" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Deliverables</h1>
-<p>List expected or published papers.<br>
-- <strong>Reports:</strong> Link to technical reports or progress updates.<br>
-- <strong>Datasets:</strong> Repository links (e.g., Zenodo, Dryad, private server).</p>
-<hr>
+<section id="results" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="results"><span class="header-section-number">3.3</span> Results</h2>
+<p>The resulting prioritization models (maps) showed the distribution of the diversity value within the study region, with the seismic line density being used to show how priority is effected when considering their reclamation cost.We then a created bivariate map to analyze the overlap between cost and no cost conservation strategies (Fig. 5).</p>
+</section>
+<section id="discussion" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="discussion"><span class="header-section-number">3.4</span> Discussion</h2>
+<p>Our prioritization approach integrates SDMs with restoration cost to identify areas where habitat restoration has the greatest beneﬁt for bird conservation per unit cost. This allows us to better understand where in the Upper Athabasca Region protection, restoration, and management is best suited. The zones selected as the most effective areas for protection are riparian zones and parkland remnants in the agricultural ﬁelds of the southeast.</p>
+</section>
+<section id="data-sources" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="data-sources"><span class="header-section-number">3.5</span> Data Sources</h2>
+<p>ABMI. 2015. Alberta Backfilled Wall-to-Wall Vegetation Layer. Raster. <a href="https://abmi.ca/home/data-analytics/da-top/da-product-overview/Data-Archive/Detailed-Vegetation-Maps.html">[repository]</a></p>
+<p>ABMI. 2021. Wall-to-Wall Human Footprint Inventory. Geodatabase. <a href="https://abmi.ca/home/data-analytics/da-top/da-product-overview/Human-Footprint-Products/HF-inventory.html">[repository]</a></p>
+<p>ABMI. 2024. Single Species Predicted Relative Abundance - Birds. Raster Dataset. <a href="ftp.public.abmi.ca/GISData/BiodiversityData/SingleSpecies/2024/Birds">[ftp]</a></p>
+<p>Alberta Environment and Protected Areas. 2015. Alberta Merged Wetland Inventory. Geodatabase. <a href="https://geodiscover.alberta.ca/geoportal/rest/metadata/item/bfa8b3fdf0df4ec19f7f648689237969/html">[repository]</a></p>
+<p>Alberta Forestry and Parks. 2024, January 24. Parks and Protected Areas of Alberta. Geodatabase. <a href="https://geodiscover.alberta.ca/geoportal/rest/metadata/item/0d1ac1474eba42fe9444a42a23a4ea1b/html#distributionInfo">[repository]</a></p>
+<p>Cornell Lab of Ornithology. 2025. eBird Basic Dataset. Table. <a href="https://science.ebird.org/en/use-ebird-data/download-ebird-data-products">[repository]</a></p>
+</section>
+<section id="literature-cited" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="literature-cited"><span class="header-section-number">3.6</span> Literature Cited</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-bayne2005" class="csl-entry" role="listitem">
+Bayne, Erin M., Steve L. Van Wilgenburg, Stan Boutin, and Keith A. Hobson. 2005. <span>“Modeling and Field-Testing of Ovenbird (Seiurus Aurocapillus) Responses to Boreal Forest Dissection by Energy Sector Development at Multiple Spatial Scales.”</span> <em>Landscape Ecology</em> 20 (2): 203–16. <a href="https://doi.org/10.1007/s10980-004-2265-9">https://doi.org/10.1007/s10980-004-2265-9</a>.
+</div>
+<div id="ref-dabros2018" class="csl-entry" role="listitem">
+Dabros, Anna, Matthew Pyper, and Guillermo Castilla. 2018. <span>“Seismic Lines in the Boreal and Arctic Ecosystems of North America: Environmental Impacts, Challenges, and Opportunities.”</span> <em>Environmental Reviews</em> 26 (2): 214–29. <a href="https://doi.org/10.1139/er-2017-0080">https://doi.org/10.1139/er-2017-0080</a>.
+</div>
+<div id="ref-lee2006" class="csl-entry" role="listitem">
+Lee, Philip, and Stan Boutin. 2006. <span>“Persistence and Developmental Transition of Wide Seismic Lines in the Western Boreal Plains of Canada.”</span> <em>Journal of Environmental Management</em> 78 (3): 240–50. <a href="https://doi.org/10.1016/j.jenvman.2005.03.016">https://doi.org/10.1016/j.jenvman.2005.03.016</a>.
+</div>
+</div>
+</section>
 </section>
 
 </main>

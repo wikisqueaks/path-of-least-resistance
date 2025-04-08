@@ -9,33 +9,65 @@ format:
     toc: true
     toc-depth: 2
     number-sections: true
+    allow-html: true
+    include-in-header: link-icons.html
+    reference-location: section
+bibliography: references.bib
 ---
+
+# Project Information
+
+This project was completed as partial fulfillment of the University of Alberta's ***Environmental & Conservation Sciences - Conservation Biology*** degree program during the course of RENR 496 *Conservation Planning* with Dr. Scott Nielsen.
+
+**Project Title:** *Path of Least Resistance: Prioritizing Avian Biodiversity Areas in a Highly Fragmented Boreal Ecosystem.*
+
+**Authors**: *Parker Cooke, Adam Kleparchuk, Nolan Merryweather, Kyle Taylor*
+
+**Date Completed:** April 8th, 2025.
+
+# Public Resources
+
+[Poster Presentation at the University of Alberta](assets/RENR496_Group2_poster.pdf)
+
+[ArcGIS Storymap Presentation (*In Development*)](https://storymaps.arcgis.com/stories/72fcd3e55d7c4b09980180860057019b)
 
 # Project Overview
-**Project Title:** *Path of Least Resistance: Prioritizing Avian Biodiversity Areas in a Highly Fragmeneted Boreal Ecosystem.*  
-**Authors**: *Parker Cooke, Adam Kleparchuk, Nolan Merryweather, Kyle Taylor*  
-**Start Date:** *2025-01-07*  
-**End Date** *2025-04-17*  
 
-# Objectives
-Describe the main goals of the project, including research questions, conservation priorities, or hypotheses.
+## Objectives
 
-# Methods
-Outline the methodologies, including:
-- Data collection protocols  
-- Remote sensing/GIS methods  
-- Statistical models used  
+Seismic lines represent a major source of habitat fragmentation in Alberta’s Upper Athabasca Region, disrupting ecosystem structure and function by reducing connectivity, increasing edge effects, and altering bird behaviour [@dabros2018; @lee2006; @bayne2005].
 
-# Data Sources
-| Dataset | Source | Description | Access |
-|---------|--------|-------------|--------|
-| Example Dataset 1 | NASA | Satellite-derived vegetation indices | Public |
-| Example Dataset 2 | Field Surveys | Ground-truth species abundance | Restricted |
+![Map of the study area in Alberta’s Upper Athabasca Region.](assets/Fig1.jpg){#fig-fig1}
 
-# Deliverables
-List expected or published papers.  
-- **Reports:** Link to technical reports or progress updates.  
-- **Datasets:** Repository links (e.g., Zenodo, Dryad, private server).  
+With nearly 168,000 km of linear features within the study area, representing \$1.7B in reclamation deficit, prioritizing restoration efforts is essential to maximize conservation impact within ﬁnancial constraints. Our objective is to identify areas of high conservation value with and without seismic cost considerations and to develop a simple strategic classification of **Protect**, **Restore**, and **Manage** to inform conservation planning and land use management.
 
+## Methods
 
----
+Over 1 million Alberta bird occurrence records from eBird were used to build 46 Maxent species distribution models (SDMs) for Alberta. These complemented 87 songbird models from ABMI, totalling 133 species out of the 304 native breeding birds, including 13 species of concern. These SDMs were used as conservation features in Zonation, using a hierarchical mask for existing protected areas, and excluding aquatic, developed & agricultural land cover. The prioritization model was run once with seismic line density as a cost function and once without (Fig. 4).
+
+## Results
+
+The resulting prioritization models (maps) showed the distribution of the diversity value within the study region, with the seismic line density being used to show how priority is effected when considering their reclamation cost.We then a created bivariate map to analyze the overlap between cost and no cost conservation strategies (Fig. 5).
+
+## Discussion
+
+Our prioritization approach integrates SDMs with restoration cost to identify areas where habitat restoration has the greatest beneﬁt for bird conservation per unit cost. This allows us to better understand where in the Upper Athabasca Region protection, restoration, and management is best suited. The zones selected as the most effective areas for protection are riparian zones and parkland remnants in the agricultural ﬁelds of the southeast.
+
+## Data Sources
+
+ABMI. 2015. Alberta Backfilled Wall-to-Wall Vegetation Layer. Raster. [\[repository\]](https://abmi.ca/home/data-analytics/da-top/da-product-overview/Data-Archive/Detailed-Vegetation-Maps.html)
+
+ABMI. 2021. Wall-to-Wall Human Footprint Inventory. Geodatabase. [\[repository\]](https://abmi.ca/home/data-analytics/da-top/da-product-overview/Human-Footprint-Products/HF-inventory.html)
+
+ABMI. 2024. Single Species Predicted Relative Abundance - Birds. Raster Dataset. [\[ftp\]](ftp.public.abmi.ca/GISData/BiodiversityData/SingleSpecies/2024/Birds)
+
+Alberta Environment and Protected Areas. 2015. Alberta Merged Wetland Inventory. Geodatabase. [\[repository\]](https://geodiscover.alberta.ca/geoportal/rest/metadata/item/bfa8b3fdf0df4ec19f7f648689237969/html)
+
+Alberta Forestry and Parks. 2024, January 24. Parks and Protected Areas of Alberta. Geodatabase. [\[repository\]](https://geodiscover.alberta.ca/geoportal/rest/metadata/item/0d1ac1474eba42fe9444a42a23a4ea1b/html#distributionInfo)
+
+Cornell Lab of Ornithology. 2025. eBird Basic Dataset. Table. [\[repository\]](https://science.ebird.org/en/use-ebird-data/download-ebird-data-products)
+
+## Literature Cited
+
+::: {#refs}
+:::
