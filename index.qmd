@@ -37,13 +37,13 @@ This project was completed as partial fulfillment of the University of Alberta's
 
 Seismic lines represent a major source of habitat fragmentation in Alberta’s Upper Athabasca Region, disrupting ecosystem structure and function by reducing connectivity, increasing edge effects, and altering bird behaviour [@dabros2018; @lee2006; @bayne2005].
 
-![Map of the study area in Alberta’s Upper Athabasca Region.](assets/Fig1.jpg){#fig-fig1}
+![Map of the study area in Alberta’s Upper Athabasca Region.](assets/Fig1.jpg){#fig-fig1 width=50% .fig-aligh="left"}
 
 With nearly 168,000 km of linear features within the study area, representing \$1.7B in reclamation deficit, prioritizing restoration efforts is essential to maximize conservation impact within ﬁnancial constraints. Our objective is to identify areas of high conservation value with and without seismic cost considerations and to develop a simple strategic classification of **Protect**, **Restore**, and **Manage** to inform conservation planning and land use management.
 
 ## Methods
 
-Over 1 million Alberta bird occurrence records from eBird were used to build 46 Maxent species distribution models (SDMs) for Alberta. These complemented 87 songbird models from ABMI, totalling 133 species out of the 304 native breeding birds, including 13 species of concern. These SDMs were used as conservation features in Zonation, using a hierarchical mask for existing protected areas, and excluding aquatic, developed & agricultural land cover. The prioritization model was run once with seismic line density as a cost function and once without (Fig. 4).
+Over 1 million Alberta bird occurrence records from *eBird* were used to build 46 Maxent species distribution models (SDMs) for Alberta. These complemented 87 songbird models from ABMI, totalling 133 species out of the 304 native breeding birds, including 13 species of concern. These SDMs were used as conservation features in Zonation, using a hierarchical mask for existing protected areas, and excluding aquatic, developed & agricultural land cover. The prioritization model was run once with seismic line density as a cost function and once without (Fig. 4).
 
 ## Results
 
