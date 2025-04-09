@@ -13,6 +13,8 @@ format:
     include-in-header: link-icons.html
     reference-location: section
 bibliography: references.bib
+resources:
+  - assets/RENR496_Group2_Poster.pdf
 ---
 
 # Project Information
@@ -27,7 +29,7 @@ This project was completed as partial fulfillment of the University of Alberta's
 
 # Public Resources
 
-[Poster Presentation at the University of Alberta](assets/RENR496_Group2_poster.pdf)
+[Poster Presentation at the University of Alberta](assets/RENR496_Group2_Poster.pdf)
 
 [ArcGIS Storymap Presentation (*In Development*)](https://storymaps.arcgis.com/stories/72fcd3e55d7c4b09980180860057019b)
 
@@ -35,19 +37,33 @@ This project was completed as partial fulfillment of the University of Alberta's
 
 ## Objectives
 
-Seismic lines represent a major source of habitat fragmentation in Alberta’s Upper Athabasca Region, disrupting ecosystem structure and function by reducing connectivity, increasing edge effects, and altering bird behaviour [@dabros2018; @lee2006; @bayne2005].
+Seismic lines represent a major source of habitat fragmentation in Alberta’s Upper Athabasca Region (@fig-fig1), disrupting ecosystem structure and function by reducing connectivity, increasing edge effects, and altering bird behaviour [@dabros2018; @lee2006; @bayne2005].
 
 ![Map of the study area in Alberta’s Upper Athabasca Region.](assets/Fig1.jpg){#fig-fig1 width=50% .fig-aligh="left"}
 
-With nearly 168,000 km of linear features within the study area, representing \$1.7B in reclamation deficit, prioritizing restoration efforts is essential to maximize conservation impact within ﬁnancial constraints. Our objective is to identify areas of high conservation value with and without seismic cost considerations and to develop a simple strategic classification of **Protect**, **Restore**, and **Manage** to inform conservation planning and land use management.
+With nearly 168,000 km of linear features within the study area (@fig-fig2), representing \$1.7B in reclamation deficit, prioritizing restoration efforts is essential to maximize conservation impact within ﬁnancial constraints. Our objective is to identify areas of high conservation value with and without seismic cost considerations and to develop a simple strategic classification of **Protect**, **Restore**, and **Manage** to inform conservation planning and land use management.
+
+![Map of seismic line density in Alberta’s Upper Athabasca Region. Units are linear $km/km^2$.](assets/Fig2.png){#fig-fig2}
 
 ## Methods
 
+<<<<<<< HEAD
 Over 1 million Alberta bird occurrence records from *eBird* were used to build 46 Maxent species distribution models (SDMs) for Alberta. These complemented 87 songbird models from ABMI, totalling 133 species out of the 304 native breeding birds, including 13 species of concern. These SDMs were used as conservation features in Zonation, using a hierarchical mask for existing protected areas, and excluding aquatic, developed & agricultural land cover. The prioritization model was run once with seismic line density as a cost function and once without (Fig. 4).
+=======
+Over 1 million Alberta bird occurrence records from eBird were used to build 46 Maxent species distribution models (SDMs) for Alberta. These complemented 87 songbird models from ABMI, totalling 133 species out of the 304 native breeding birds, including 13 species of concern (@fig-fig3).
+
+![Examples of the SDMs created as inputs into the prioritization analysis.](assets/Fig3.png){#fig-fig3}
+
+These SDMs were used as conservation features in Zonation, using a hierarchical mask for existing protected areas, and excluding aquatic, developed & agricultural land cover. The prioritization model was run once with seismic line density as a cost function and once without (@fig-fig4).
+
+![Zonation analysis is shown with no cost prioritization (left) and with seismic line cost prioritization (right). Each zonation model ranks each 1 square km cell sequentially from highest conservation value to lowest, considering complementarity. With cost prioritization, the algorithm selects lower cost cells of equal value over those with higher costs.](assets/Fig4.jpg){#fig-fig4}
+
 
 ## Results
 
 The resulting prioritization models (maps) showed the distribution of the diversity value within the study region, with the seismic line density being used to show how priority is effected when considering their reclamation cost.We then a created bivariate map to analyze the overlap between cost and no cost conservation strategies (Fig. 5).
+
+![A contingency matrix utilizing bivariate colour symbology to demonstrate the overlap and divergence between our two Zonation outputs. The chart (top left) indicates the overall cost of restoration within each of the ﬁve categories based on \$12.5k per linear km of seismic line [@filicetti2019].](assets/Fig5.png){#fig-fig5}
 
 ## Discussion
 
